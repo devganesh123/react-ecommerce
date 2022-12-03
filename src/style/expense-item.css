@@ -1,0 +1,15 @@
+.expense-wrapper {
+  display: flex;
+  background: #e8e6e6;
+  padding: 15px;
+  margin-bottom: 1em;
+}
+.expense-header {
+  display: flex;
+  gap: 2em;
+}
+
+.expense-date {
+  display: flex;
+  gap: 5px;
+}
