@@ -1,6 +1,7 @@
 import "./style/app.css";
 import Navbar from "./components/Navbar";
 import ExpenseItem from "./components/ExpenseItem";
+import NewExpense from "./components/NewExpense";
 
 function App() {
   const expenseData = [
@@ -22,6 +23,7 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <div className="app-container">
+        <NewExpense></NewExpense>
         <ExpenseItem
           id={expenseData[0].id}
           title={expenseData[0].title}
