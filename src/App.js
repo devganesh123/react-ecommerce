@@ -1,6 +1,6 @@
 import "./style/app.css";
 import Navbar from "./components/Navbar";
-import ExpenseItem from "./components/ExpenseItem";
+import Expenses from "./components/Expenses";
 import NewExpense from "./components/NewExpense";
 
 function App() {
@@ -24,18 +24,7 @@ function App() {
       <Navbar></Navbar>
       <div className="app-container">
         <NewExpense></NewExpense>
-        <ExpenseItem
-          id={expenseData[0].id}
-          title={expenseData[0].title}
-          itemDate={expenseData[0].itemDate}
-          price={expenseData[0].price}
-        ></ExpenseItem>
-        <ExpenseItem
-          id={expenseData[1].id}
-          title={expenseData[1].title}
-          itemDate={expenseData[1].itemDate}
-          price={expenseData[1].price}
-        ></ExpenseItem>
+        <Expenses items={expenseData}></Expenses>
       </div>
     </div>
   );
